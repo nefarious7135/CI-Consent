@@ -11,7 +11,8 @@ export default defineConfig({
   // workers: process.env.CI ? 1 : undefined,
   workers:1,
   reporter: [
-    ['html', { open: 'always' }]
+    ['html', { open: 'always' }],
+    ['json', { outputFile: 'playwright-report/results.json' }]
     //['./teamsReporter.ts']
   ],
   timeout: 200000, // 🕒 timeout ของ test ทั้งหมด

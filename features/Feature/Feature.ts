@@ -335,6 +335,7 @@ export class FeatureHelper {
 			return;
 		}
 
+		await this.page.waitForTimeout(1000);
 		await this.page.locator("//button[@id='btn-view-form']").click();
 		await this.page.waitForTimeout(1000);
 
@@ -394,6 +395,7 @@ export class FeatureHelper {
 		console.log('---------------------------------');
 		console.log('Delete_Consent_Form');
 		console.log('---------------------------------');
+
 		const statusForm = await this.page.locator("//div[@id='status-name']").textContent();
 
 		if (statusForm == 'DRAFT') {
@@ -423,6 +425,7 @@ export class FeatureHelper {
 
 		await this.page.locator("//input[@id='input-search-form-name']").fill(localStorage.formName);
 		await this.page.locator("//button[@id='btn-search-consent-form']").click();
+		await this.page.waitForTimeout(1000);
 
 	}
 

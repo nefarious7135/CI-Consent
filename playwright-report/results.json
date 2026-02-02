@@ -1,0 +1,316 @@
+{
+  "config": {
+    "configFile": "/Users/gossilla/Documents/Playwright Consent Management/playwright.config.ts",
+    "rootDir": "/Users/gossilla/Documents/Playwright Consent Management/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/gossilla/Documents/Playwright Consent Management/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Backoffice-DEV",
+        "name": "Backoffice-DEV",
+        "testDir": "/Users/gossilla/Documents/Playwright Consent Management/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 200000
+      },
+      {
+        "outputDir": "/Users/gossilla/Documents/Playwright Consent Management/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Backoffice-UAT",
+        "name": "Backoffice-UAT",
+        "testDir": "/Users/gossilla/Documents/Playwright Consent Management/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 200000
+      },
+      {
+        "outputDir": "/Users/gossilla/Documents/Playwright Consent Management/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Consent-DEV",
+        "name": "Consent-DEV",
+        "testDir": "/Users/gossilla/Documents/Playwright Consent Management/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 200000
+      },
+      {
+        "outputDir": "/Users/gossilla/Documents/Playwright Consent Management/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Consent-UAT",
+        "name": "Consent-UAT",
+        "testDir": "/Users/gossilla/Documents/Playwright Consent Management/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 200000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.54.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "consent form/add-consent_form.spec.ts",
+      "file": "consent form/add-consent_form.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Consent Management",
+          "file": "consent form/add-consent_form.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create And Verify Consent Form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Consent-UAT",
+                  "projectName": "Consent-UAT",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28766,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ fullPath: /Users/gossilla/Documents/Playwright Consent Management/tests/consent form/add-consent_form.spec.ts\n"
+                        },
+                        {
+                          "text": "✅ noExt: add-consent_form.spec\n"
+                        },
+                        {
+                          "text": "✅ fileName: add-consent_form\n"
+                        },
+                        {
+                          "text": "✅ ENV: uat\n"
+                        },
+                        {
+                          "text": "✅ MAIN_URL: https://uat-consent-management-fe.nonprod.ngernhaijai.com\n"
+                        },
+                        {
+                          "text": "--------------------- init data ------------------\n"
+                        },
+                        {
+                          "text": "🌐 ENV: uat\n"
+                        },
+                        {
+                          "text": "🌐 Consent URL: https://uat-consent-management-fe.nonprod.ngernhaijai.com\n"
+                        },
+                        {
+                          "text": "✅ file Names: add-consent_form\n"
+                        },
+                        {
+                          "text": "✅ functions: add\n"
+                        },
+                        {
+                          "text": "✅ mapkey : add-consent_form\n"
+                        },
+                        {
+                          "text": "✅ Path json: features/Data/Json/consent_form/add_consent_form.json\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "✅ Set_data_init\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "✅ Login_PI\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "✅ Set_goto_LMS_Back_Office\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "User ENV: ptcspi.a@ngernhaijai.com\n"
+                        },
+                        {
+                          "text": "Password ENV: P@ssw0rd\n"
+                        },
+                        {
+                          "text": "-------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Create_Consent_Form\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Select_Menu_Consent_Configuration\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "✅ formNo : Consent_form_number_9985\n"
+                        },
+                        {
+                          "text": "✅ formName : Consent_form_name_9985\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Search_Consent_Form\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "View_Consent_Form\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Verify Create Data\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Search_Consent_Form\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "Delete_Consent_Form\n"
+                        },
+                        {
+                          "text": "---------------------------------\n"
+                        },
+                        {
+                          "text": "ลบ Form สำเร็จ\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T07:54:30.836Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f3bd68c3311d92111e63-10de60ea00842736a8ef",
+              "file": "consent form/add-consent_form.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-02T07:54:30.024Z",
+    "duration": 30448.677999999985,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -19,7 +19,7 @@ export default defineConfig({
   use: {
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: false,
+    headless: true,
     actionTimeout: 20000,    // 🕒 timeout ของ action เช่น click(), fill()
     navigationTimeout: 40000,
     trace: 'on-first-retry',
@@ -27,27 +27,27 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'Backoffice-DEV',
-      use: {
-        baseURL: 'https://dev-lms-extended.nonprod.ngernhaijai.com',
-        viewport: { width: 1800, height: 900 },
-      },
-    },
-    {
-      name: 'Backoffice-UAT',
-      use: {
-        baseURL: 'https://uat-lms-extended.nonprod.ngernhaijai.com',
-        viewport: { width: 1800, height: 900 },
-      },
-    },
-    {
-      name: 'Consent-DEV',
-      use: {
-        baseURL: 'https://dev-consent-management-fe.nonprod.ngernhaijai.com',
-        viewport: { width: 1800, height: 900 },
-      },
-    },
+    // {
+    //   name: 'Backoffice-DEV',
+    //   use: {
+    //     baseURL: 'https://dev-lms-extended.nonprod.ngernhaijai.com',
+    //     viewport: { width: 1800, height: 900 },
+    //   },
+    // },
+    // {
+    //   name: 'Backoffice-UAT',
+    //   use: {
+    //     baseURL: 'https://uat-lms-extended.nonprod.ngernhaijai.com',
+    //     viewport: { width: 1800, height: 900 },
+    //   },
+    // },
+    // {
+    //   name: 'Consent-DEV',
+    //   use: {
+    //     baseURL: 'https://dev-consent-management-fe.nonprod.ngernhaijai.com',
+    //     viewport: { width: 1800, height: 900 },
+    //   },
+    // },
     {
       name: 'Consent-UAT',
       use: {

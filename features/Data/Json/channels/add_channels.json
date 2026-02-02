@@ -1,0 +1,20 @@
+{
+  "add": {
+    "Channel_name": "ChannelNameee",
+    "Channel_type": "E-Consent",  
+    "Description": "test 1234",
+    "Role": "CMP_DPO",
+    "Inquiry": "Yes",
+    "Acquire": "Yes",
+    "Maintenance": "Yes"
+  },
+  "edit": {
+    "Channel_name": "ChannelNameee",
+    "Channel_type": "Voice Consent",
+    "Description": "test 1234",
+    "Role": "CMP_DPO",
+    "Inquiry": "Yes",
+    "Acquire": "Yes",
+    "Maintenance": "Yes"
+  }
+}

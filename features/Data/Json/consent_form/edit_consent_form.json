@@ -1,0 +1,30 @@
+{
+  "add": {
+    "Form_no": "Consent_form_number",
+    "Consent_form_name": "Consent_form_name",
+    "Description": "test 1234",
+    "Consent_category": "PDPA",
+    "Data_controller": "JAI",
+    "Consent_type": "Mandatory",
+    "Product_level": "ALL",
+    "Legal_base": "Consent",
+    "Receiver_type": "Kbank",
+    "Action_company": "Disclose"
+  },
+  "edit": {
+    "Consent_form_name": "edit_Consent_form_name",
+    "Description": "test 1234",
+    "Consent_category": "T&C",
+    "Data_controller": "KBANK",
+    "Consent_type": "Freely Given",
+    "Product_level": "ALL",
+    "Legal_base": "Consent",
+    "Receiver_type": "KBank",
+    "Action_company": "Disclose"
+  },
+  "filter": {
+    "consent_category" : "T&C",
+    "status" : "ACTIVE",
+    "data_controller" : "KBANK"
+  }
+}

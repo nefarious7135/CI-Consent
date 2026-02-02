@@ -1,0 +1,12 @@
+{
+  "add": {
+    "Receiver_name": "AUTOMATE_RT_NAME",
+    "Display_name": "edit_display_rt",
+    "Description": "test 1234"
+  },
+  "edit": {
+    "Receiver_name": "AUTOMATE_RT_NAME",
+    "Display_name": "edit_display_rt",
+    "Description": "test 1234"
+  }
+}

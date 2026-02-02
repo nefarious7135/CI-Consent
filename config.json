@@ -1,0 +1,17 @@
+{
+  "add_consent_form": "features/Data/Json/consent_form/add_consent_form.json",
+  "edit_consent_form": "features/Data/Json/consent_form/edit_consent_form.json",
+
+  "add_consent_versioning": "features/Data/Json/consent_versioning/add_consent_versioning.json",
+  "edit_consent_versioning": "features/Data/Json/consent_versioning/edit_consent_versioning.json",
+
+  "add_channel": "features/Data/Json/channels/add_channels.json",
+  "edit_channel": "features/Data/Json/channels/edit_channels.json",
+
+  "add_action_companies": "features/Data/Json/action_companies/add_action_companies.json",
+  "edit_action_companies": "features/Data/Json/action_companies/edit_action_companies.json",
+
+  "add_receiver_type": "features/Data/Json/receiver_type/add_receiver_type.json",
+  "edit_receiver_type": "features/Data/Json/receiver_type/edit_receiver_type.json"
+ 
+}

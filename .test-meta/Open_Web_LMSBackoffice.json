@@ -1,0 +1,19 @@
+{
+  "describe": "LMS Backoffice",
+  "projectName": "LOS-SIT",
+  "baseURL": "https://los-sit.nonprod.ngernhaijai.com",
+  "altBaseURL": "https://lms-web-sit.nonprod.ngernhaijai.com",
+  "testFile": "C:\\Users\\bigkk\\OneDrive\\เดสก์ท็อป\\testcase-NHJ\\PlaywrightLMSBackoffice-new\\tests\\consentLMS\\test01.spec.ts",
+  "testTitle": "Open Web LMSBackoffice",
+  "retry": 0,
+  "annotations": [
+    {
+      "type": "tag",
+      "description": "Regression"
+    }
+  ],
+  "tags": [
+    "Regression"
+  ],
+  "outputDir": "C:\\Users\\bigkk\\OneDrive\\เดสก์ท็อป\\testcase-NHJ\\PlaywrightLMSBackoffice-new\\test-results\\consentLMS-test01-LMS-Backoffice-Open-Web-LMSBackoffice-LOS-SIT"
+}

@@ -7,7 +7,7 @@ on:
 jobs:
   Run_Script:
     name: Run_Script
-    runs-on: mac-self-hosted
+    runs-on: [self-hosted, macOS, uat, playwright]
 
     steps:
       - name: Checkout

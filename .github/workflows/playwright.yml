@@ -7,7 +7,7 @@ on:
 jobs:
   Run_Script:
     name: Run_Script
-    runs-on: [self-hosted, macOS, ARM64]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout

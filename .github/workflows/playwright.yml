@@ -7,9 +7,7 @@ on:
 jobs:
   Run_Script:
     name: Run_Script
-    runs-on: self-hosted
-
-
+    runs-on: mac-self-hosted
 
     steps:
       - name: Checkout
@@ -84,8 +82,8 @@ jobs:
           server_port: 465
           secure: true
 
-          username: ${{ secrets.EMAIL }}
-          password: ${{ secrets.PASSWORD_MAIL }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
 
           subject: "Playwright Test Result - ${{ needs.Run_Script.result }}"
 

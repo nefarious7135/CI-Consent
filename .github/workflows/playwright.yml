@@ -7,7 +7,7 @@ on:
 jobs:
   Run_Script:
     name: Run_Script
-    runs-on: [self-hosted, uat, playwright]
+    runs-on: ubuntu-latest
 
 
     steps:

@@ -69,34 +69,34 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
 
 
-  # Send_Mail:
-  #   name: Send_Mail
-  #   needs: Report
-  #   runs-on: ubuntu-latest
+  Send_Mail:
+    name: Send_Mail
+    needs: Report
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Send email notification
-  #       if: always()
-  #       uses: dawidd6/action-send-mail@v3
-  #       with:
-  #         server_address: smtp.gmail.com
-  #         server_port: 465
-  #         secure: true
+    steps:
+      - name: Send email notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
 
-  #         username: ${{ secrets.MAIL_USERNAME }}
-  #         password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{ secrets.MAIL }}
+          password: ${{ secrets.PASSWORD }}
 
-  #         subject: "Playwright Test Result - ${{ job.status }}"
-  #         to: bigkk2008@hotmail.com
-  #         from: Playwright CI <${{ secrets.MAIL_USERNAME }}>
+          subject: "Playwright Test Result - ${{ job.status }}"
+          to: bigkk2008@hotmail.com
+          from: Playwright CI <${{ secrets.MAIL_USERNAME }}>
 
-  #         body: |
-  #           Playwright CI Finished 🚀
+          body: |
+            Playwright CI Finished 🚀
 
-  #           Repository: ${{ github.repository }}
-  #           Branch: ${{ github.ref_name }}
-  #           Status: ${{ job.status }}
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Status: ${{ job.status }}
 
 
-  #           View report:
-  #           ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            View report:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

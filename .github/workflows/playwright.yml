@@ -76,8 +76,7 @@ jobs:
 
     steps:
       - name: Send email notification
-        if: always() && secrets.EMAIL != '' && secrets.PASSWORD_MAIL != ''
-
+        if: always()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -88,6 +87,7 @@ jobs:
           password: ${{ secrets.PASSWORD_MAIL }}
 
           subject: "Playwright Test Result - ${{ needs.Run_Script.result }}"
+
           to: bigkk2008@hotmail.com
           from: Playwright CI <${{ secrets.MAIL_USERNAME }}>
 
